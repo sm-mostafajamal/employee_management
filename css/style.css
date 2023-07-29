@@ -1,0 +1,35 @@
+.top {
+  width: 50%;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+.text_box {
+  width: 70%;
+  padding: 10px;
+  border: none;
+  border-bottom: 0.5px solid teal;
+  background-color: transparent;
+}
+.btn {
+  padding: 10px;
+  border: 0.5px solid teal;
+  background-color: transparent;
+}
+/* add employee */
+.form_container {
+  width: 50%;
+  height: 80vh;
+  margin: auto;
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column; */
+}
+#skills {
+  display: flex;
+  flex-direction: column;
+}
+textarea {
+  resize: vertical;
+}
