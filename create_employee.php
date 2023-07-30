@@ -77,13 +77,15 @@
                 </div>
                 <div class="features">
                     <p class="title">Description</p>
-                    <textarea name="desc" id="desc" cols="70" rows="10"></textarea>
+                    <textarea name="desc" id="desc" cols="30" rows="5"></textarea>
                 </div>
                 <div class="features">
                     <a id="redirect" class="link">
                         <input type="submit" onclick="createUser()" class="btn" name="submit" value="Save">
                     </a>
-                    <button class="btn">Cancel</button>
+                    <a href="index.php" class="link">
+                        <button class="btn">Cancel</button>
+                    </a>
                 </div>
             </div>
         </div>

@@ -35,8 +35,8 @@
               <td>".$row['name']."</td>
               <td class='td_skills'>".$row['skills']."</td>
               <td>
-                  <button class='btn'>Edit</button>
-                  <button class='btn' style='color: red; border: 1px solid red;margin: 0;'>Delete</button>
+                  <button id='edit' class='btn'>Edit</button>
+                  <button id='delete' onclick='deleteUser(".$row['id'].")' class='btn' style='color: red; border: 1px solid red;margin: 0;'>Delete</button>
               </td>
             </tr>";
       $id++;
