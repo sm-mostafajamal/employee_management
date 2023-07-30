@@ -1,7 +1,7 @@
 .top {
-  width: 50%;
+  width: 70%;
   display: flex;
-  margin: auto;
+  margin: 50px auto;
   justify-content: space-between;
 }
 .text_box {
@@ -13,7 +13,7 @@
   outline: none;
 }
 .btn {
-  padding: 10px;
+  padding: 10px 15px;
   border: 0.5px solid teal;
   background-color: transparent;
   font-size: 14px;
@@ -22,34 +22,86 @@
   cursor: pointer;
   margin-right: 15px;
 }
-/* add employee */
-.form_container {
-  width: 50%;
-  height: 80vh;
+
+.table {
+  width: 80%;
   margin: auto;
+  margin-top: 50px;
+  border-collapse: collapse;
+}
+thead {
+  background-color: #01987a;
+  color: white;
+}
+tr {
+  border-bottom: 1px solid teal;
+  font-size: 14px;
+}
+tr > th {
+  letter-spacing: 1px;
+  padding: 20px;
+}
+tr > td {
+  text-align: center;
+}
+.table_img {
+  width: 80px;
+  height: 80px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+tr > .td_skills {
+  width: 40%;
+  word-wrap: break-word;
+}
+/* add employee */
+.heading {
+  text-align: center;
+}
+.form_container {
+  width: 70%;
+  margin: auto;
+}
+.form_wrapper {
+  margin: 100px auto;
   font-size: 13px;
+  display: flex;
+  justify-content: space-between;
 }
 .features {
-  display: flex;
-  flex-direction: column;
   margin-bottom: 10px;
 }
-
+.gender {
+  display: flex;
+  flex-direction: column;
+}
+.fname {
+  width: 300px;
+  padding: 10px;
+  border: none;
+  border-bottom: 0.5px solid teal;
+  background-color: transparent;
+  outline: none;
+  margin-right: 10px;
+}
+.name_wrapper {
+  display: flex;
+}
 .err {
-  margin: 10px 0;
-  font-size: 16px;
+  font-size: 12px;
   color: red;
   font-weight: bold;
 }
 #img_container {
-  width: 150px;
-  height: 150px;
+  display: block;
+  width: 250px;
+  height: 250px;
   border: 1px solid black;
-  border-radius: 50%;
+  border-radius: 15px;
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  /* position: relative; */
+  position: relative;
 }
 .uploaded_img {
   width: 100%;
@@ -67,11 +119,9 @@
   padding: 2px 0;
   background-color: rgba(0, 128, 128, 0.515);
 }
-/* .wrapper {
-  display: flex;
-  flex-direction: column;
-} */
+
 p.title {
+  margin-bottom: 5px;
   font-weight: 600;
   letter-spacing: 1px;
   font-size: 14px;
@@ -90,5 +140,6 @@ label {
   margin-bottom: 5px;
 }
 textarea {
+  margin-bottom: 10px;
   resize: vertical;
 }

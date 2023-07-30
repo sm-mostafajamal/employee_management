@@ -3,7 +3,7 @@
   
   extract(json_decode($_POST['inputData'], true));
 
-  $skills = join(',', $skills);
+  $skills = join(', ', $skills);
   $age = (int)$age;
 
   
@@ -18,13 +18,13 @@
     }
 
     $sql = "INSERT INTO employee (img, name, age, gender, skills, description) VALUES ('$img_name', '$name', $age, '$gender', '$skills', '$desc')";
-      
-    if($conn -> query($sql) === TRUE) {
+    $result = $conn -> query($sql);
+    
+    if($result) {
       echo "New Record Created Successfully";
       } else {
-      echo "faild";
+      echo "Failed Inserting Record";
       }
-  
     }
 
 ?>
