@@ -30,7 +30,7 @@
         function deleteUser(id) {
             $.ajax({
                 url: "delete.php",
-                method: "POST",
+                type: "POST",
                 data: {
                     id: id
                 },
@@ -39,6 +39,20 @@
                 }
             })
         }
+
+        // function updateUser(id) {
+        //     $.ajax({
+        //         url: "update_employee.php",
+        //         type: "POST",
+        //         data: {
+        //             id: id
+        //         },
+        //         success: (data, status) => {
+        //             // displayData();
+        //             console.log(data);
+        //         }
+        //     })
+        // }
     </script>
 </body>
 
