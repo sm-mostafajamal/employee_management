@@ -1,6 +1,7 @@
+<?php include "php_header.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
-<?php include "head.php" ?>
+<?php include "head.php"; ?>
 
 <body class="home_container">
     <h1 class="heading">Employee Management System</h1>
@@ -9,6 +10,10 @@
         <a href="create_employee.php">
             <button class="btn">Add Employee</button>
         </a>
+        <a href="logout.php">
+            <button class="btn" style="border-color: red; color: red;">Logout</button>
+        </a>
+
     </div>
     <div id="table_container"></div>
 

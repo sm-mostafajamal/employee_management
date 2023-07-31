@@ -1,4 +1,6 @@
 <?php
+include "php_header.php";
+
 function setInput($type, $name, $value)
 {
     return "<label for=$value>

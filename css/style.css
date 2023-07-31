@@ -1,14 +1,37 @@
 * {
   font-family: "Poppins", sans-serif;
 }
+/* Login page */
+
+.login_container {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+.login_wrapper {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+}
+.login_inp {
+  margin: 10px auto;
+  width: 300px;
+  outline: none;
+}
+.login_btn {
+  width: 80px;
+}
+/* Home page */
 .top {
-  width: 70%;
+  width: 80%;
   display: flex;
   margin: 50px auto;
   justify-content: space-between;
 }
 .text_box {
-  width: 70%;
+  width: 60%;
   padding: 10px;
   border: none;
   border-bottom: 0.5px solid teal;

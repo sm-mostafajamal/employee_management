@@ -1,8 +1,6 @@
 <?php
 include "connect.php";
 
-
-
 $sql = "SELECT * FROM employee";
 $result = $conn->query($sql);
 
