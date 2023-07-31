@@ -82,8 +82,15 @@ tr > .td_skills {
 }
 
 /* add employee */
-a {
-  text-decoration: none;
+.links {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.links > a {
+  font-size: 13px;
+  color: blue;
+  /* text-decoration: none; */
 }
 .heading {
   text-align: center;
