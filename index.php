@@ -42,7 +42,7 @@
 
         // function updateUser(id) {
         //     $.ajax({
-        //         url: "update_employee.php",
+        //         url: "update.php",
         //         type: "POST",
         //         data: {
         //             id: id

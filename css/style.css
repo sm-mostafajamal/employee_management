@@ -59,6 +59,9 @@ tr > .td_skills {
 }
 
 /* add employee */
+a {
+  text-decoration: none;
+}
 .heading {
   text-align: center;
 }

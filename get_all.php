@@ -37,10 +37,11 @@ if ($result->num_rows > 0) {
               <td>" . ucfirst($row['gender']) . "</td>
               <td class='td_skills'>" . $row['skills'] . "</td>
               <td style='width: 20%;'>
-                  <a href='update_employee.php/" . $row['id'] . "'>
-                    <button id='edit' onclick='updateUser(" . $row['id'] . ")' class='btn'>Edit</button>
+                  <a href='update_employee.php?id=" . $row['id'] . "'>
+                    <button id='edit' class='btn'>Edit</button>
                   </a>
-                  <button id='delete' onclick='deleteUser(" . $row['id'] . ")' class='btn' style='color: red; border: 1px solid red;margin: 0;'>Delete</button>
+                  
+                    <button id='delete' onclick='deleteUser(" . $row['id'] . ")' class='btn' style='color: red; border: 1px solid red;margin: 0;'>Delete</button>
               </td>
             </tr>";
     $id++;
