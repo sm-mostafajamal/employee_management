@@ -13,7 +13,7 @@
       <input type="password" name="password" id="password" class="login_inp" placeholder="password" required>
       <div class="links">
         <a href="forgot_password.php">forgot password?</a>
-        <a href="">change password</a>
+        <a href="change_password.php">change password</a>
       </div>
       <button class="btn login_btn" id="login">Login</button>
     </div>
@@ -26,10 +26,11 @@
         const password = $("#password").val();
 
         if (!username.length) {
-          $("#usernameErr").text("Username Required!!!")
+          return $("#usernameErr").text("Username Required!!!")
         } else if (!password.length) {
-          $("#passwordErr").text("Password Required!!!")
-
+          return $("#passwordErr").text("Password Required!!!")
+        } else if (password.length < 4) {
+          return $("#passwordErr").text("Password Minimum length should be 4!!!")
         }
         $.ajax({
           url: "login.php",
