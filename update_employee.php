@@ -91,15 +91,14 @@ function setInput($type, $name, $value)
   </div>
 
   <script>
-    const id = '<?php echo $id;  ?>'
+    const id = "<?php echo $id;  ?>";
     // getting the default data
-
     $(document).ready(() => {
       $.ajax({
         url: "get_user.php",
         type: "POST",
         data: {
-          id: id
+          id: id,
         },
         success: (data, status) => {
           const {
@@ -110,20 +109,22 @@ function setInput($type, $name, $value)
             gender,
             skills,
             description
-          } = JSON.parse(data);
+          } =
+          JSON.parse(data);
 
           $("#uploaded_img").attr("src", `uploads/${img}`);
           $("#fname").attr("value", name);
-          $(`option[value=${age}]`).prop("selected", true)
-          $(`input[value=${gender}]`).prop("checked", true)
+          $(`option[value=${age}]`).prop("selected", true);
+          $(`input[value=${gender}]`).prop("checked", true);
           $("#desc").text(description);
           // checkbox to check
-          const skills_arr = skills.split(", ")
-          skills_arr.forEach(skill => $(`input[value='${skill}']`).prop("checked", true))
-
-        }
+          const skills_arr = skills.split(", ");
+          skills_arr.forEach((skill) =>
+            $(`input[value='${skill}']`).prop("checked", true)
+          );
+        },
       });
-    })
+    });
 
     function changeImg() {
       $("#file_upload").click();
@@ -158,7 +159,7 @@ function setInput($type, $name, $value)
         form_data.append("inputData", inputData);
       } else {
         let img_src = $("#uploaded_img").attr("src");
-        img_src = img_src.split("/")[1]
+        img_src = img_src.split("/")[1];
         form_data.append("image", img_src);
         form_data.append("inputData", inputData);
       }
@@ -189,10 +190,9 @@ function setInput($type, $name, $value)
         contentType: false,
         processData: false,
         success: (data, status) => {
-          window.location = "index.php"
+          window.location = "index.php";
         },
       });
-
     };
   </script>
 

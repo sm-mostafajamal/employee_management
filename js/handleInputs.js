@@ -43,7 +43,6 @@ function createUser() {
   ) {
     $("#skillsErr").text("Select at least one skill!!!");
   } else {
-    $("#redirect").attr("href", "index.php");
     return sendUserData(form_data);
   }
 }
@@ -56,7 +55,7 @@ const sendUserData = (data) => {
     contentType: false,
     processData: false,
     success: (data, status) => {
-      // console.log(data);
+      window.location = "index.php";
     },
   });
 };

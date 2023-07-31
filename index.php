@@ -15,7 +15,22 @@
     <script>
         $(document).ready(() => {
             displayData();
+            $("#search").keyup((e) => {
+                // console.log(e.currentTarget.value);
+                $.ajax({
+                    url: "search_result.php",
+                    type: "POST",
+                    data: {
+                        q: e.currentTarget.value
+                    },
+                    success: (data) => {
+                        $("#table_container").html(data);
+                    }
+                })
+            })
         })
+
+
 
         function displayData() {
             $.ajax({

@@ -54,7 +54,7 @@ tr > td {
   object-fit: cover;
 }
 tr > .td_skills {
-  width: 40%;
+  width: 20%;
   word-wrap: break-word;
 }
 
@@ -149,4 +149,7 @@ label {
 textarea {
   margin-bottom: 10px;
   resize: vertical;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
